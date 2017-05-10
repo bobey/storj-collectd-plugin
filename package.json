@@ -1,0 +1,12 @@
+{
+  "name": "storj-collectd-plugin",
+  "version": "1.0.0",
+  "description": "A collectd exec plugin to monitor your Storj.io nodes.",
+  "main": "index.js",
+  "repository": "https://github.com/bobey/storj-collectd-plugin.git",
+  "author": "Olivier Balais <obalais@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dnode": "^1.2.2"
+  }
+}
