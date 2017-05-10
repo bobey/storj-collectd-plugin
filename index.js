@@ -19,14 +19,13 @@ const status = () => {
 
     sock.on('error', function() {
         console.error('Daemon is not running');
-        process.exit();
     });
 
     sock.on('remote', (rpc) => {
 
         rpc.status((err, shares) => {
 
-            shares.forEach((share) => outputCollectdData);
+            shares.forEach(outputCollectdData);
 
             sock.end();
         });
