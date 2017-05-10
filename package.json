@@ -6,6 +6,9 @@
   "repository": "https://github.com/bobey/storj-collectd-plugin.git",
   "author": "Olivier Balais <obalais@gmail.com>",
   "license": "MIT",
+  "bin": {
+    "collectd-storj-exec-plugin": "./index.js"
+  },
   "dependencies": {
     "dnode": "^1.2.2"
   }
