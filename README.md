@@ -30,3 +30,11 @@ LoadPlugin exec
         Exec "youruser" "collectd-storj-exec-plugin"
 </Plugin>
 ```
+
+Finally, add the following lines in `/usr/share/collectd/types.db`:
+
+```
+peers                   value:GAUGE:0:U
+shared                  value:GAUGE:0:U
+restarts                value:GAUGE:0:U
+```
