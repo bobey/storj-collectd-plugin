@@ -27,6 +27,7 @@ Then you need to add the following lines in your collectd config:
 LoadPlugin exec
 
 <Plugin exec>
+        Interval 120
         Exec "youruser" "collectd-storj-exec-plugin"
 </Plugin>
 ```
