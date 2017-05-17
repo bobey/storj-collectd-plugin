@@ -4,7 +4,7 @@
 
 const dnode = require('dnode');
 const host = process.env.COLLECTD_HOSTNAME || 'storj.node';
-const interval = 120; //override default collectd interval to avoid storj-daemon performance issue
+const interval = process.env.COLLECTD_INTERVAL || 120;
 const storjDaemonPort = 45015;
 
 const outputCollectdData = (share) => {
