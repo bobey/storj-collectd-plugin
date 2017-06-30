@@ -38,4 +38,7 @@ Finally, add the following lines in `/usr/share/collectd/types.db`:
 peers                   value:GAUGE:0:U
 shared                  value:GAUGE:0:U
 restarts                value:GAUGE:0:U
+contracts               value:GAUGE:0:U
+delta                   value:GAUGE:0:U
+percentused             value:GAUGE:0:100
 ```
