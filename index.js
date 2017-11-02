@@ -3,6 +3,8 @@
 'use strict';
 
 const dnode = require('dnode');
+const https = require('https');
+
 const host = process.env.COLLECTD_HOSTNAME || 'storj.node';
 const interval = process.env.COLLECTD_INTERVAL || 120;
 const storjDaemonPort = 45015;
