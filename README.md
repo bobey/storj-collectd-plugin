@@ -27,7 +27,6 @@ Then you need to add the following lines in your collectd config:
 LoadPlugin exec
 
 <Plugin exec>
-        Interval 120
         Exec "youruser" "collectd-storj-exec-plugin"
 </Plugin>
 ```
@@ -41,4 +40,10 @@ restarts                value:GAUGE:0:U
 contracts               value:GAUGE:0:U
 delta                   value:GAUGE:0:U
 percentused             value:GAUGE:0:100
+datareceived            value:GAUGE:0:U
+resptime                value:GAUGE:0:U
+reputation              value:GAUGE:0:U
+timeoutrate             value:GAUGE:0:U
+lastseen                value:GAUGE:0:U
+lasttimeout             value:GAUGE:0:U
 ```
