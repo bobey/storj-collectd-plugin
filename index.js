@@ -15,7 +15,7 @@ const apiURI = "/contacts/";
 const outputCollectdData = (share) => {
     const totalPeers = share.meta.farmerState.totalPeers || 0;
     const numRestarts = share.meta.numRestarts || 0;
-    const spaceUsedBytes = share.meta.farmerState.spaceUsedBytes || 0;
+    const spaceUsedBytes = parseInt(share.meta.farmerState.spaceUsedBytes) || 0;
     const contractCount = share.meta.farmerState.contractCount || 0;
     const delta = fixDeltaValue(share);
     const percentUsed = share.meta.farmerState.percentUsed || 0;
